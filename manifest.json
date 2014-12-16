@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "BrowserStack Testing",
+    "version": "1",
+    "description": "This is a an extension to simply test the public URL using BrowserStack platform",
+
+    "browser_action": {
+        "name": "Manipulate DOM",
+
+        "default_icon": "icon.png",
+        "default_popup": "background.html"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*"
+    ]
+}

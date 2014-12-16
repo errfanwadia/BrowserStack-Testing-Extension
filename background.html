@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background Page</title>
+    <style>
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+        }
+        img {
+            margin: 5px;
+            border: 2px solid black;
+            vertical-align: middlxe;
+            width: 75px;
+            height: 75px;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script src="background.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet ">
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="" id="loginModal">
+
+        <div class="modal-body">
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a id="device_desktop" href="#desktop" data-toggle="tab">Desktop</a>
+                </li>
+                <li class=""><a id="device_mobile" href="#mobile" data-toggle="tab">Mobile</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane active" id="desktop">
+
+                    <fieldset>
+                        <div class="control-group">
+                            <!-- Username -->
+                            <label class="control-label" for="username">Please select an Desktop OS</label>
+                            <div class="controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                        --Select--
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="menu1" role="menu" aria-labelledby="dropdownMenu1">
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <!-- Password-->
+                            <label class="control-label" for="password">Please select a Browser to Test</label>
+                            <div class="controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                                        --Select--
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="menu2" role="menu" aria-labelledby="dropdownMenu1">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <!-- Password-->
+                            <label class="control-label" for="url">Test a public URL</label>
+                            <div class="controls">
+                                <input type="text" id="desktop_url" name="url" placeholder="http://www.google.com" class="input-xlarge">
+                            </div>
+                        </div>
+                        <br/>
+
+                        <div class="control-group">
+                            <!-- Button -->
+                            <div class="controls">
+                                <button id="test_desktop" class="btn btn-success" style="background-color: #feb544; color: #644010;">Start testing</button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+                <div class="tab-pane" id="mobile">
+
+                    <fieldset>
+                        <div class="control-group">
+                            <!-- Username -->
+                            <label class="control-label" for="username">Please select a Mobile OS</label>
+                            <div class="controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
+                                        --Select--
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="menu3" role="menu" aria-labelledby="dropdownMenu1">
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <!-- Password-->
+                            <label class="control-label" for="password">Please select a Browser to Test</label>
+                            <div class="controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                                        --Select--
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="menu4" role="menu" aria-labelledby="dropdownMenu1">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <!-- Password-->
+                            <label class="control-label" for="url">Test a public URL</label>
+                            <div class="controls">
+                                <input type="text" id="mobile_url" name="url" placeholder="http://www.google.com" class="input-xlarge">
+                            </div>
+                        </div>
+                        <br/>
+
+                        <div class="control-group">
+                            <!-- Button -->
+                            <div class="controls">
+                                <button id="test_mobile" class="btn btn-success" style="background-color: #feb544; color: #644010;">Start testing</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
